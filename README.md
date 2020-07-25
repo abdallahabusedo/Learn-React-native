@@ -25,10 +25,13 @@ EXPO is a set of tools and a framework that sits on top react native and hides a
 
 to run it `npm start`
 
-## TAGS
+## SafeAreaView
 
 `<SafeAreaView>` The purpose of SafeAreaView is to render content within the safe area boundaries of a device.
-`<Text` A React component for displaying text.
+
+## Text
+
+`<Text>` A React component for displaying text.
 
 ## Images
 
@@ -46,4 +49,14 @@ to put a online image we must use an object and we must write the width and high
    hight: 300,
    uri:"https://picsum.photos/200/300"
 }}/>
+```
+
+## StatusBar
+
+`StatusBar` Component to control the app status bar.
+example :
+
+```
+//in the style sheet
+paddingTop : Platform.OS === "android" ? StatusBar.currentHeight : 0,
 ```
